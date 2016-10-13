@@ -4,10 +4,18 @@
 
 int main(int argc, char **argv)
 {
-    char first[255], last[255];
+    char name[255];
 
+<<<<<<< HEAD
     askname(first, last);
 
     printf("Hello, %s %s!\n", first, last);
+=======
+    printf("Enter your name: ");
+    fgets(name, 255, stdin);
+    name[strlen(name)-1] = '\0'; /* remove the newline at the end */
+
+    printf("Hello %s!\n", name);
+>>>>>>> parent of 548b591... Promt user for last name as well.
     return 0;
 }
